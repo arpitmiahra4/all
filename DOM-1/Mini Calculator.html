@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin-right: 20px;
+        }
+        button{
+            margin-right: 40px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input id="first" type="number" placeholder="enter 1st number" value="">
+    <input id="second" type="number" placeholder="enter 2nd number" value=""><br>
+    <button onclick="add()">Add</button>
+    <button onclick="subs()">Subtract</button>
+    <button onclick="div()">Divide</button>
+    <button onclick="mult()">Multiply</button>
+</body>
+</html>
+
+<script>
+    function add() {
+        let sum=0;
+   let first = document.getElementById("first").value;
+   let second = document.getElementById("second").value;
+   sum = Number(first) + Number(second)
+   alert(sum)
+    }
+    function subs() {
+        let sum=0;
+   let first = document.getElementById("first").value;
+   let second = document.getElementById("second").value;
+   sum = Number(first) - Number(second)
+   alert(sum)
+    }
+    function div() {
+        let sum=0;
+   let first = document.getElementById("first").value;
+   let second = document.getElementById("second").value;
+   sum = Number(first) / Number(second)
+   alert(sum)
+    }
+    function mult() {
+        let sum=0;
+   let first = document.getElementById("first").value;
+   let second = document.getElementById("second").value;
+   sum = Number(first) * Number(second)
+   alert(sum)
+    }
+</script>
